@@ -1,0 +1,10 @@
+uuid: 798ddb02-e296-4d5e-baa3-a92929008237
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.localgov_site_search_result_child_page
+label: 'LocalGov site search result - Child page'
+targetEntityType: node
+cache: true

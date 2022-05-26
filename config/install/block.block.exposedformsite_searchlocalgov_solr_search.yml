@@ -1,0 +1,28 @@
+uuid: 69eaba42-3e2f-4718-aae3-2acb7f9dd141
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.site_search
+  module:
+    - system
+    - views
+  theme:
+    - localgov_scarfolk
+id: exposedformsite_searchlocalgov_solr_search
+theme: localgov_scarfolk
+region: content
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:site_search-localgov_solr_search'
+settings:
+  id: 'views_exposed_filter_block:site_search-localgov_solr_search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /site-search

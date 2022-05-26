@@ -1,0 +1,41 @@
+.view-site-search .field--name-body {
+  margin-bottom: 1rem;
+}
+
+.view-site-search .view-content {
+  margin-top: 3rem;
+}
+
+.view-site-search .views-row {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+
+.view-site-search .views-row .lgd-topic-list-builder__service {
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.view-site-search .views-row .service-landing-page__service {
+  display: flex;
+}
+
+.view-site-search .views-row .lgd-topic-list-builder__service-icon,
+.view-site-search .views-row .service-landing-page__service-icon {
+  padding-top: 1rem;
+}
+
+.view-site-search .views-row .service-landing-page__service-icon svg {
+  margin-right: 12px;
+}
+
+.view-site-search .views-row .lgd-topic-list-builder__service-item {
+  padding-top: 0.75rem;
+}
+
+.view-site-search .views-row .service-landing-page__service-item {
+  padding-top: 0.5rem;
+}

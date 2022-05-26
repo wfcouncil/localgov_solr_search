@@ -1,0 +1,89 @@
+uuid: 14423605-2cd7-4406-b705-2d65488c4a60
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.date_format.localgov_event_date_full
+    - core.date_format.localgov_event_date_hour
+    - core.entity_view_mode.node.localgov_site_search_result
+    - field.field.node.localgov_event.body
+    - field.field.node.localgov_event.localgov_event_call_to_action
+    - field.field.node.localgov_event.localgov_event_categories
+    - field.field.node.localgov_event.localgov_event_date
+    - field.field.node.localgov_event.localgov_event_image
+    - field.field.node.localgov_event.localgov_event_locality
+    - field.field.node.localgov_event.localgov_event_location
+    - field.field.node.localgov_event.localgov_event_price
+    - node.type.localgov_event
+  module:
+    - date_recur
+    - text
+    - user
+_core:
+  default_config_hash: ZidxXfdXmkSCEcxtHbLaPne28S4d3CnKsB-tmG57yc0
+id: node.localgov_event.localgov_site_search_result
+targetEntityType: node
+bundle: localgov_event
+mode: localgov_site_search_result
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  localgov_event_categories:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  localgov_event_date:
+    type: date_recur_basic_formatter
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: localgov_event_date_full
+      separator: to
+      show_next: 10
+      count_per_item: false
+      occurrence_format_type: localgov_event_date_full
+      same_end_date_format_type: localgov_event_date_hour
+      interpreter: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  localgov_event_locality:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  localgov_event_location:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  localgov_event_price:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  links: true
+  localgov_event_call_to_action: true
+  localgov_event_image: true
+  search_api_excerpt: true

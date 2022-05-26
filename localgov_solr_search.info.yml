@@ -1,0 +1,13 @@
+name: Localgov Solr Search
+type: module
+description: Installs and sets up a basic site search with Solr
+core_version_requirement: ^8.8 || ^9
+package: LocalGov Drupal
+
+dependencies:
+  - drupal:views
+  - search_api:search_api
+  - search_api:search_api_solr
+  - search_api:search_api_solr_autocomplete
+  - search_api:search_api_spellcheck
+  - localgov_core:localgov_core

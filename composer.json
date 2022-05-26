@@ -1,0 +1,19 @@
+{
+  "name": "localgovdrupal/localgov_solr_search",
+  "description": "Configures a minimal Solr site search",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Bradley Baylis",
+      "email": "bradley.baylis@walthamforest.gov.uk"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/search_api": "^1.23",
+    "drupal/search_api_solr": "^4.2",
+    "drupal/search_api_solr_autocomplete": "^4.2",
+    "drupal/search_api_spellcheck": "^4.0"
+  }
+}

@@ -1,0 +1,10 @@
+uuid: ecaccaa1-49ac-4846-a25c-c4e455036b30
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.localgov_site_search_result
+label: 'LocalGov site search result'
+targetEntityType: node
+cache: true

@@ -1,0 +1,56 @@
+uuid: 1644ddba-4223-4a31-b12d-96a496b91ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.site_search
+    - views.view.site_search
+  module:
+    - views
+    - search_api_autocomplete
+    - search_api_solr_autocomplete
+id: site_search
+label: 'Site Search'
+index_id: site_search
+suggester_settings:
+  live_results:
+    fields: {  }
+    highlight:
+      enabled: false
+      field: ''
+    view_modes:
+      'entity:node':
+        action_page: ''
+        consultation: ''
+        developer_page: ''
+        error: ''
+        homepage: ''
+        localgov_event: ''
+        localgov_guides_overview: ''
+        localgov_guides_page: ''
+        localgov_services_landing: ''
+        localgov_services_page: ''
+        localgov_services_status: ''
+        localgov_services_sublanding: ''
+        localgov_subsites_overview: ''
+        localgov_subsites_page: ''
+        story: ''
+  search_api_solr_spellcheck: {  }
+suggester_weights:
+  live_results: 0
+  search_api_solr_spellcheck: 0
+suggester_limits:
+  live_results: 5
+  search_api_solr_spellcheck: 1
+search_settings:
+  'views:site_search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 8
+  min_length: 2
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true
