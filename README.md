@@ -49,7 +49,7 @@ This module requires the following modules:
 
   ...
 
-  services
+  services:
     solr:
       type: solr:8
       portforward: true
